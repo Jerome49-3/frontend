@@ -1,0 +1,163 @@
+:root {
+  .wrapper {
+    min-width: 260px;
+    max-width: 276px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .wrapper {
+    padding: 5vh 0vh 5vh 0vh;
+  }
+
+  * {
+    transition: all 1.5s;
+  }
+
+  @media (min-width: 320px) {
+    .wrapper {
+      max-width: 300px !important;
+    }
+
+    footer {
+      .footerTxt {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.40rem;
+        letter-spacing: 4px;
+
+        & p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 481px) {
+    .wrapper {
+      max-width: 420px !important;
+    }
+
+    footer {
+      .footerTxt {
+        font-size: 1.25rem;
+        letter-spacing: 4px;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .wrapper {
+      max-width: 480px !important;
+    }
+
+    main .wrapper h2 {
+      font-size: 1.75rem;
+      letter-spacing: 1.75px;
+    }
+
+    footer {
+      .footerTxt {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.40rem;
+        letter-spacing: 4px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 576px !important;
+    }
+
+    main .wrapper h2 {
+      font-size: 1.95rem;
+      font-weight: 700;
+      letter-spacing: 1.95px;
+    }
+
+    footer {
+      .footerTxt {
+        font-size: 1.35rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+
+        & p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .wrapper {
+      max-width: 768px !important;
+    }
+
+    main .wrapper h2 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+    }
+
+    footer .footerTxt {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 5.8px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      max-width: 992px !important;
+
+      footer .footerTxt {
+        font-size: 2rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 6px !important;
+      }
+
+      main .wrapper form input::placeholder,
+      main .wrapper form textarea::placeholder {
+        font-size: 1.25rem !important;
+      }
+
+      main .wrapper form input,
+      main .wrapper form textarea {
+        padding: 18px !important;
+      }
+
+      main .wrapper form button {
+        padding: 18px !important;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      max-width: 1200px !important;
+    }
+
+    main .wrapper form input::placeholder,
+    main .wrapper form textarea::placeholder {
+      font-size: 1.5rem !important;
+    }
+
+    main .wrapper form input,
+    main .wrapper form textarea {
+      padding: 20px !important;
+    }
+
+    main .wrapper form button {
+      padding: 20px !important;
+    }
+  }
+}

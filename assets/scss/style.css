@@ -1,0 +1,265 @@
+:root .wrapper {
+  min-width: 260px;
+  max-width: 276px;
+  margin-left: auto;
+  margin-right: auto;
+}
+:root main .wrapper {
+  padding: 5vh 0vh 5vh 0vh;
+}
+:root * {
+  transition: all 1.5s;
+}
+@media (min-width: 320px) {
+  :root .wrapper {
+    max-width: 300px !important;
+  }
+  :root footer .footerTxt {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    letter-spacing: 4px;
+  }
+  :root footer .footerTxt p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) {
+  :root .wrapper {
+    max-width: 420px !important;
+  }
+  :root footer .footerTxt {
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+  }
+}
+@media (min-width: 576px) {
+  :root .wrapper {
+    max-width: 480px !important;
+  }
+  :root main .wrapper h2 {
+    font-size: 1.75rem;
+    letter-spacing: 1.75px;
+  }
+  :root footer .footerTxt {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    letter-spacing: 4px;
+  }
+}
+@media (min-width: 768px) {
+  :root .wrapper {
+    max-width: 576px !important;
+  }
+  :root main .wrapper h2 {
+    font-size: 1.95rem;
+    font-weight: 700;
+    letter-spacing: 1.95px;
+  }
+  :root footer .footerTxt {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  :root footer .footerTxt p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+@media (min-width: 992px) {
+  :root .wrapper {
+    max-width: 768px !important;
+  }
+  :root main .wrapper h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+  }
+  :root footer .footerTxt {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 5.8px;
+  }
+}
+@media (min-width: 1200px) {
+  :root .wrapper {
+    max-width: 992px !important;
+  }
+  :root .wrapper footer .footerTxt {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 6px !important;
+  }
+  :root .wrapper main .wrapper form input::-moz-placeholder, :root .wrapper main .wrapper form textarea::-moz-placeholder {
+    font-size: 1.25rem !important;
+  }
+  :root .wrapper main .wrapper form input::placeholder,
+  :root .wrapper main .wrapper form textarea::placeholder {
+    font-size: 1.25rem !important;
+  }
+  :root .wrapper main .wrapper form input,
+  :root .wrapper main .wrapper form textarea {
+    padding: 18px !important;
+  }
+  :root .wrapper main .wrapper form button {
+    padding: 18px !important;
+  }
+}
+@media (min-width: 1400px) {
+  :root .wrapper {
+    max-width: 1200px !important;
+  }
+  :root main .wrapper form input::-moz-placeholder, :root main .wrapper form textarea::-moz-placeholder {
+    font-size: 1.5rem !important;
+  }
+  :root main .wrapper form input::placeholder,
+  :root main .wrapper form textarea::placeholder {
+    font-size: 1.5rem !important;
+  }
+  :root main .wrapper form input,
+  :root main .wrapper form textarea {
+    padding: 20px !important;
+  }
+  :root main .wrapper form button {
+    padding: 20px !important;
+  }
+}
+
+header {
+  height: 10vh;
+  border-bottom: 2px solid #0B0019;
+  box-shadow: 0px 0px 7px rgba(36, 0, 82, 0.7);
+  -moz-box-shadow: 0px 0px 7px rgba(36, 0, 82, 0.7);
+  -webkit-box-shadow: 0px 0px 7px rgba(36, 0, 82, 0.7);
+  padding: 15px;
+}
+header .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .wrapper figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+header .wrapper figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .wrapper figure figcaption {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.7), 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+main {
+  display: block;
+  background-color: rgba(36, 0, 82, 0.7);
+  padding-top: 12.5vh;
+}
+main .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 15px rgba(36, 0, 82, 0.7), 0px 0px 6px rgba(0, 0, 0, 0.9);
+}
+main .wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.7), 0px 0px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1.5px;
+}
+main .wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+main .wrapper form input,
+main .wrapper form textarea {
+  padding: 5px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgba(36, 0, 82, 0.7), 0px 0px 4px rgba(0, 0, 0, 0.9);
+}
+main .wrapper form input:hover,
+main .wrapper form textarea:hover {
+  box-shadow: inset 0px 0px 10px rgba(36, 0, 82, 0.7), inset 0px 0px 4px rgba(0, 0, 0, 0.9);
+}
+main .wrapper form textarea {
+  resize: none;
+}
+main .wrapper form input::-moz-placeholder, main .wrapper form textarea::-moz-placeholder {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+main .wrapper form input::placeholder,
+main .wrapper form textarea::placeholder {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+main .wrapper form input:focus-visible::-moz-placeholder, main .wrapper form textarea:focus-visible::-moz-placeholder {
+  opacity: 0;
+}
+main .wrapper form input:focus-visible::placeholder,
+main .wrapper form textarea:focus-visible::placeholder {
+  opacity: 0;
+}
+main .wrapper form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px rgba(36, 0, 82, 0.7), 0px 0px 4px rgba(0, 0, 0, 0.9);
+}
+main .wrapper form button:hover {
+  box-shadow: inset 0px 0px 10px rgba(36, 0, 82, 0.7), inset 0px 0px 4px rgba(0, 0, 0, 0.9);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 0, 82, 0.7);
+  height: 19vh;
+}
+footer .footerTxt,
+footer .footerTxt a {
+  color: white;
+}
+footer .footerTxt a {
+  text-decoration: none;
+}
+footer .footerTxt a:hover {
+  color: rgb(1, 188, 1);
+}
+footer .footerTxt a:active {
+  color: rgb(1, 188, 1);
+}
+footer .footerTxt a:visited {
+  color: purple;
+}/*# sourceMappingURL=style.css.map */

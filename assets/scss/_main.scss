@@ -1,0 +1,80 @@
+main {
+  display: block;
+  background-color: $purpleLight;
+  // padding: 15vh;
+  padding-top: 12.5vh;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bckgWrapper;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 15px $purpleLight, 0px 0px 6px $noirHight;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 30px;
+      text-shadow: $textShadow;
+      letter-spacing: 1.5px;
+    }
+
+
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+
+      input,
+      textarea {
+        padding: 5px;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px $purpleLight, 0px 0px 4px $noirHight;
+
+        &:hover {
+          box-shadow: inset 0px 0px 10px $purpleLight, inset 0px 0px 4px $noirHight;
+        }
+      }
+
+      textarea {
+        resize: none;
+
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.1rem;
+        font-weight: 800;
+        text-align: center;
+        letter-spacing: 1.1px;
+      }
+
+      input:focus-visible::placeholder,
+      textarea:focus-visible::placeholder {
+        opacity: 0;
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px $purpleLight, 0px 0px 4px $noirHight;
+
+        &:hover {
+          box-shadow: inset 0px 0px 10px $purpleLight, inset 0px 0px 4px $noirHight;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+header {
+  height: 10vh;
+  border-bottom: 2px solid $purpleDark;
+  box-shadow: 0px 0px 7px $purpleLight;
+  -moz-box-shadow: 0px 0px 7px $purpleLight;
+  -webkit-box-shadow: 0px 0px 7px $purpleLight;
+  padding: 15px;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    figure {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      figcaption {
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: $textShadow;
+      }
+    }
+
+  }
+}

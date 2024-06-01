@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/scss/reset.css">
+  <link rel="stylesheet" href="./assets/scss/style.css">
+  <title>SendMail</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <figure>
+        <img src="./assets/imgs/send mail.png" alt="SendMail">
+        <figcaption>Mon send-mail</figcaption>
+      </figure>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <h2>
+        Formulaire de contact
+      </h2>
+      <form method="post" id="form">
+        <input type="text" id="fistname" placeholder="prénom" name="fistname" minlength="1" maxlength="1" required>
+        <input type="text" id="lastname" placeholder="nom" name="lastname" minlength="1" maxlength="1" required>
+        <input type="text" id="email" placeholder="email" name="email" minlength="1" maxlength="1" required>
+        <input type="text" id="subject" placeholder="sujet" name="subject" minlength="1" maxlength="1">
+        <textarea name="message" id="message" placeholder="message:" rows="5" cols="30" minlength="1" maxlength="1"
+          required wrap="hard"></textarea>
+        <button type="submit" value="Send">
+          <p>
+            Envoyer l'e-mail
+          </p>
+        </button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footerTxt">
+      <p>Made at<span>
+          <a
+            href="https://www.lereacteur.io/?utm_source=google&utm_medium=cpc&utm_campaign=FR-SN-Brand&utm_term=le%20r%C3%A9acteur&utm_content=377851505166&gad_source=1&gclid=CjwKCAjwx-CyBhAqEiwAeOcTde7EsCCHrpdDqUq2K3hFx24fxIMDKq0FZtDolDxM3NAtCfAZggCxmRoCJuAQAvD_BwE">Le
+            Reacteur</a>
+        </span> by <span><a href="https://github.com/Jerome49-3">Jerome Bobin</a></span> - 2024</p>
+    </div>
+    <script src="./assets/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $purpleLight;
+  height: 19vh;
+
+  .footerTxt,
+  .footerTxt a {
+    color: $blancFoot;
+  }
+
+  .footerTxt a {
+    text-decoration: none;
+
+    &:hover {
+      color: $vertLink;
+    }
+
+    &:active {
+      color: $vertLink;
+    }
+
+    &:visited {
+      color: $purpleLink;
+    }
+  }
+}
