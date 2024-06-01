@@ -7,11 +7,11 @@ doc.addEventListener("DOMContentLoaded", () => {
     const response = await axios.post(
       "https://site--backendsendmail--s4qnmrl7fg46.code.run/send-mail",
       {
-        fistname: doc.querySelector("firstname").value,
-        lastname: doc.querySelector("lastname").value,
-        email: doc.querySelector("email").value,
-        subject: doc.querySelector("subject").value,
-        message: doc.querySelector("message").value,
+        fistname: doc.querySelector("#firstname").value,
+        lastname: doc.querySelector("#lastname").value,
+        email: doc.querySelector("#email").value,
+        subject: doc.querySelector("#subject").value,
+        message: doc.querySelector("#message").value,
       }
     );
     console.log("response.data:", response.data);
