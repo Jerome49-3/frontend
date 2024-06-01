@@ -15,6 +15,8 @@ doc.addEventListener("DOMContentLoaded", () => {
       }
     );
     console.log("response.data:", response.data);
+    // console.log(location.href)
     alert("email envoyé");
+    location.replace(location.href);
   });
 });
