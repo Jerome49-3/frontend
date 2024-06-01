@@ -15,8 +15,10 @@ doc.addEventListener("DOMContentLoaded", () => {
       }
     );
     console.log("response.data:", response.data);
-    // console.log(location.href)
-    alert("email envoyé");
-    location.replace(location.href);
+    if (response.data !== undefined || response.data !== null) {
+      alert("email envoyé");
+      // console.log(location.href);
+      // location.replace(location.href);
+    }
   });
 });
